@@ -1,0 +1,70 @@
+.header {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.flex-box {
+  height: 62px;
+  width: 100vw;
+
+  background-color: white;
+  border-bottom: 1px solid #ecedee;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.left {
+  margin-right: auto;
+}
+
+.logo1 {
+  background-image: url(../../../../assets/logos/logo1.svg);
+  width: 25px;
+  height: 28px;
+  margin-right: 35px;
+}
+
+.logo2 {
+  background-image: url(../../../../assets/logos/logo2ar.svg);
+  width: 67px;
+  height: 21px;
+  margin-right: 5px;
+}
+
+.profile {
+  background-image: url(../../../../assets/images/profile.svg);
+  width: 33px;
+  height: 33px;
+  margin-left: 21px;
+}
+
+input[type="text"],
+textarea {
+  background-color: #f9fafb;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+input::placeholder {
+  color: #e6e6e6;
+}
+
+.search {
+  width: 321px;
+  height: 31px;
+  text-align: right;
+  border: 1px solid #f0f0f0;
+  border-radius: 6px;
+  padding: 9px 30px 9px 40px;
+  background-position-x: 97% !important;
+  background-position-y: 60% !important;
+  background: transparent url("../../../../assets/images/Search.svg") no-repeat;
+  margin-right: 118px;
+}
