@@ -3,6 +3,7 @@
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 2;
 }
 
 .flex-box {
@@ -67,4 +68,5 @@ input::placeholder {
   background-position-y: 60% !important;
   background: transparent url("../../../../assets/images/Search.svg") no-repeat;
   margin-right: 118px;
+  font-size: 12px;
 }
