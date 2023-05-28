@@ -18,12 +18,10 @@
 
 .graph {
   grid-column: 3 / span 4;
-  height: 44vh;
 }
 
 .card1 {
   grid-column: 1 / span 2;
-  height: 9vh;
   padding: 22px 39px 19px 32px;
 }
 
@@ -39,11 +37,12 @@
 
 .table1 {
   grid-column: 1 / span 3;
-  height: 32vh;
+  padding: 34px;
 }
 
 .table2 {
   grid-column: 4 / span 3;
+  padding: 34px;
 }
 
 .grid-item {
