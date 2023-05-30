@@ -1,0 +1,75 @@
+.page-container {
+  width: 88vw;
+  margin-top: 3.875rem;
+  margin-right: 14.25rem;
+  text-align: right;
+}
+
+.header {
+  text-align: right;
+  padding: 16px;
+}
+
+.title {
+  font-size: 24px;
+}
+
+.search {
+  text-align: right;
+  width: 324px;
+  height: 38px;
+  border: 1px solid #f0f0f0;
+  border-radius: 6px;
+  padding: 9px 30px 9px 40px;
+  background-position-x: 97% !important;
+  background-position-y: 60% !important;
+  background: transparent url("../../../assets/images/Search.svg") no-repeat;
+  font-size: 12px;
+  margin-top: 1px;
+}
+
+input:focus {
+  outline: none;
+}
+
+input::placeholder {
+  color: #d9d9d9;
+  font-size: 9px;
+}
+
+.m-check {
+  margin-right: 18px;
+  margin-left: 28px;
+}
+
+.edit-btn {
+  background-color: #67b375;
+  color: white;
+  width: 86px;
+  height: 30px;
+  border-radius: 8px;
+  font-size: 12px;
+  border: 0px solid;
+}
+
+.del-btn {
+  background-color: #e1284a;
+  color: white;
+  width: 76px;
+  height: 30px;
+  border-radius: 8px;
+  font-size: 12px;
+  border: 0px solid;
+  margin-right: 25px;
+}
+
+.phone-number {
+  margin-right: 65px;
+  color: #b1b1b1;
+  font-size: 10px;
+}
+
+th {
+  font-size: 10px;
+  color: #999999;
+}
