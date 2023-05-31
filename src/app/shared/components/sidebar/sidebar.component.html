@@ -1,17 +1,32 @@
 <div class="sidenav">
-  <a routerLink="/home"
-    >الرئيسية <img src="../../../../assets/icons/Graph.svg"
-  /></a>
-  <a routerLink="/statistics"
-    >الإحصائيات <img src="../../../../assets/icons/Chart.svg"
-  /></a>
-  <a routerLink="/users"
-    >المستخدمين <img src="../../../../assets/icons/User.svg"
-  /></a>
-  <a routerLink="/products"
-    >المنتجات <img src="../../../../assets/icons/Bag.svg"
-  /></a>
-  <a routerLink="/packages"
-    >الباقات <img src="../../../../assets/icons/Percent.svg"
-  /></a>
+  <ul>
+    <li [class.active]="isLinkActive('/home')">
+      <a routerLink="/home">الرئيسية</a>
+      <div [ngClass]="isLinkActive('/home') ? 'home-active' : 'home'"></div>
+    </li>
+    <li [class.active]="isLinkActive('/statistics')">
+      <a routerLink="/statistics">الإحصائيات</a>
+      <div
+        [ngClass]="
+          isLinkActive('/statistics') ? 'statistics-active' : 'statistics'
+        "
+      ></div>
+    </li>
+    <li [class.active]="isLinkActive('/users')">
+      <a routerLink="/users">المستخدمين</a>
+      <div [ngClass]="isLinkActive('/users') ? 'users-active' : 'users'"></div>
+    </li>
+    <li [class.active]="isLinkActive('/products')">
+      <a routerLink="/products">المنتجات</a>
+      <div
+        [ngClass]="isLinkActive('/products') ? 'products-active' : 'products'"
+      ></div>
+    </li>
+    <li [class.active]="isLinkActive('/packages')">
+      <a routerLink="/packages">الباقات</a>
+      <div
+        [ngClass]="isLinkActive('/packages') ? 'packages-active' : 'packages'"
+      ></div>
+    </li>
+  </ul>
 </div>

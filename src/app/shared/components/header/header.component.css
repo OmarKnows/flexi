@@ -22,6 +22,10 @@
   margin-right: auto;
 }
 
+.right {
+  margin-left: auto;
+}
+
 .logo1 {
   background-image: url(../../../../assets/logos/logo1.svg);
   width: 25px;
@@ -69,4 +73,97 @@ input::placeholder {
   background: transparent url("../../../../assets/images/Search.svg") no-repeat;
   margin-right: 118px;
   font-size: 12px;
+}
+
+.add-product-btn {
+  background-color: #67b375;
+  color: white;
+  width: 138px;
+  height: 37px;
+  border: 0px;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-left: 14px;
+  padding: 8px 10px;
+}
+
+img {
+  margin-left: 5px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  text-align: right;
+  column-gap: 43px;
+}
+
+.add-product-modal-header {
+  padding: 25px;
+  font-size: 24px;
+}
+
+.modal-form-label {
+  font-size: 14px;
+  margin-bottom: 9px;
+  color: black;
+}
+
+.modal-form-input {
+  width: 361px;
+  height: 49px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+}
+
+.modal-form-input-wide {
+  width: 766px;
+  height: 136px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+}
+
+.wide {
+  grid-column: 1 / span 2;
+}
+
+.upload {
+  border: 1px dotted #d1d5db;
+  color: #d1d5db;
+  border-radius: 10px;
+  margin-top: 21px;
+  text-align: center;
+  width: 766px;
+  height: 144px;
+}
+
+.submit-product-btn {
+  width: 225px;
+  height: 57px;
+  border: 0px;
+  border-radius: 11px;
+  background-color: #67b375;
+  color: white;
+
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.add-product-modal input::placeholder {
+  color: #c7c7c7;
+  font-size: 14px;
+  text-align: right;
+}
+
+textarea::placeholder {
+  color: #c7c7c7;
+  font-size: 14px;
+  text-align: right;
 }

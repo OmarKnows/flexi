@@ -12,6 +12,8 @@ import { ProductsComponent } from './modules/products/products.component';
 import { PackagesComponent } from './modules/packages/packages.component';
 import { SidebarComponent } from './shared/components/sidebar/sidebar.component';
 import { HeaderComponent } from './shared/components/header/header.component';
+import { NgChartsModule } from 'ng2-charts';
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 const appRoutes: Routes = [
   {
@@ -52,7 +54,13 @@ const appRoutes: Routes = [
     HeaderComponent,
     UsersComponent,
   ],
-  imports: [BrowserModule, FormsModule, RouterModule.forRoot(appRoutes)],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    NgChartsModule,
+    ModalModule.forRoot(),
+    RouterModule.forRoot(appRoutes),
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

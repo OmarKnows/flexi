@@ -1,8 +1,68 @@
 <div class="header">
   <div class="flex-box">
-    <div class="profile left"></div>
+    <button
+      *ngIf="isLinkActive('/products'); else elseBlock"
+      class="add-product-btn left"
+      (click)="openModal(template)"
+    >
+      إضافة منتج <img src="../../../../assets/icons/add.svg" />
+    </button>
+    <ng-template #elseBlock><div class="profile left"></div></ng-template>
     <input class="search" placeholder="ابحث عن عنصر" type="text" />
     <div class="logo2"></div>
     <div class="logo1"></div>
   </div>
 </div>
+
+<ng-template #template>
+  <div class="pt-3 px-3">
+    <div class="flex-container">
+      <button
+        type="button"
+        style="font-size: 12px"
+        class="btn-close close pull-right"
+        aria-label="Close"
+        (click)="modalRef?.hide()"
+      >
+        <span aria-hidden="true" class="visually-hidden">&times;</span>
+      </button>
+      <div style="font-size: 24px">إضافة منتج</div>
+    </div>
+  </div>
+  <hr />
+
+  <div class="add-product-modal pb-3 px-3">
+    <form class="grid-container">
+      <div class="modal-form-label">صنف المنتج</div>
+      <div class="modal-form-label">اسم المنتج</div>
+      <input class="modal-form-input" type="text" placeholder="صنف المنتج" />
+      <input
+        class="modal-form-input"
+        type="text"
+        placeholder="اسم المنتج كامل"
+      />
+
+      <div class="modal-form-label mt-3">العلامة التجارية</div>
+      <div class="modal-form-label mt-3">السعر</div>
+      <input class="modal-form-input" type="text" placeholder="علامة المنتج" />
+      <input class="modal-form-input" type="text" placeholder="السعر بالريال" />
+
+      <div class="modal-form-label wide mt-3">تفاصيل المنتج</div>
+      <textarea
+        class="modal-form-input-wide wide"
+        type="text"
+        placeholder="وصف المنتج بالتفصيل لتشجيع المشتري فقط التفاصيل المهمة..."
+      ></textarea>
+
+      <div class="upload wide">
+        <img class="mt-4" src="../../../../assets/icons/upload.svg" />
+        <div>رفع الملف أو قم بسحب هنا</div>
+        <div>PNG, JPG, GIF حتى 10 ميغا</div>
+      </div>
+
+      <div class="wide">
+        <button class="submit-product-btn mt-3">إضافة منتج</button>
+      </div>
+    </form>
+  </div>
+</ng-template>

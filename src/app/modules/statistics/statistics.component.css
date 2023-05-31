@@ -13,10 +13,14 @@
 
 .pie-chart {
   grid-column: 1 / span 2;
+  height: 489px;
+  padding: 20px;
 }
 
 .graph {
   grid-column: 3 / span 4;
+  height: 489px;
+  padding: 20px;
 }
 
 .card1 {
@@ -36,12 +40,12 @@
 
 .table1 {
   grid-column: 1 / span 3;
-  padding: 34px;
+  padding: 34px 34px 0px 34px;
 }
 
 .table2 {
   grid-column: 4 / span 3;
-  padding: 34px;
+  padding: 34px 34px 0px 34px;
 }
 
 .grid-item {
@@ -58,6 +62,16 @@
   justify-content: space-between;
 }
 
+.grid-graph-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+}
+
+.left {
+  margin-right: auto;
+}
+
 .title {
   font-size: 20px;
 }
@@ -71,8 +85,20 @@
   color: #acadb1;
 }
 
+.table-subtitle {
+  color: #bfbfbf;
+  font-size: 9px;
+}
+
+.graph-subtitle {
+  font-size: 14px;
+  color: #acadb1;
+  margin: 0 23px;
+}
+
 .show-more {
   font-size: 12px;
+  cursor: pointer;
 }
 
 .sub-title {
@@ -85,4 +111,59 @@
   background-color: rgba(66, 178, 126, 0.11);
   padding: 6px 10px;
   border-radius: 26px;
+}
+
+.graph-capsule {
+  width: 67px;
+  height: 43px;
+  color: #2ec291;
+  font-size: 14px;
+  background-color: rgba(66, 178, 126, 0.11);
+  padding: 10px 13px;
+  border-radius: 7px;
+}
+
+.download-btn {
+  border: 1px solid #e7ecff;
+  border-radius: 6px;
+  color: #67b375;
+  background-color: white;
+  font-size: 14px;
+  padding: 10px 15px;
+}
+
+.table {
+  font-size: 10px;
+}
+
+.table-header {
+  background-color: #f9fafb;
+}
+
+.striped-table tr:nth-child(even) {
+  background-color: #f9fafb;
+  border: 2px solid #f9fafb;
+}
+
+td:nth-child(2) {
+  color: #c6c6c6;
+}
+
+th {
+  color: #727272;
+}
+
+td {
+  padding: 12px 0;
+}
+
+.doughnut-chart {
+  height: 303px;
+  width: 303px;
+  margin: 52px 100px 27px;
+}
+
+.graph-container {
+  height: 350px;
+  margin: 0px 170px 27px;
 }

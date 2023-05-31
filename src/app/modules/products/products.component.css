@@ -72,4 +72,20 @@ input::placeholder {
 th {
   font-size: 10px;
   color: #999999;
+  padding: 20px !important;
+}
+
+.table-header {
+  background-color: #f3f4f6d9;
+  padding-top: 26px;
+  padding-bottom: 20px;
+}
+
+.controls {
+  text-align: left;
+}
+
+.controls img {
+  margin-right: 15px;
+  cursor: pointer;
 }
