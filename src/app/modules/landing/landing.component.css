@@ -120,3 +120,8 @@ td {
 .table {
   font-size: 10px;
 }
+
+.graph-container {
+  height: 400px;
+  margin: 0px 120px 27px;
+}
