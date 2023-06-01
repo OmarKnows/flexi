@@ -1,5 +1,5 @@
 .page-container {
-  width: 88vw;
+  width: 86vw;
   margin-top: 62px;
   margin-right: 228px;
 }
@@ -54,7 +54,7 @@
   border-radius: 7px;
   font-size: 10px;
   color: black;
-  text-align: right;
+  /* text-align: right; */
 }
 
 .grid-item-header {
@@ -158,12 +158,57 @@ td {
 }
 
 .doughnut-chart {
-  height: 303px;
-  width: 303px;
-  margin: 52px 100px 27px;
+  height: 202px;
+  width: 202px;
+  margin: 52px auto;
+  position: relative;
 }
 
 .graph-container {
   height: 350px;
   margin: 0px 170px 27px;
+}
+
+.chart-total {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #667085;
+  font-size: 16px;
+}
+
+.chart-total-amount {
+  position: absolute;
+  top: 50%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+  font-size: 26px;
+}
+
+.reyal {
+  position: absolute;
+  top: 50%;
+  left: 24%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+}
+
+.legend {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+.legend-amounts {
+  list-style-type: none;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.legend-labels {
+  color: #939393;
+  list-style-type: none;
+  font-size: 10px;
+  white-space: nowrap;
 }

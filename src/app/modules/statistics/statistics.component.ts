@@ -11,10 +11,12 @@ import { default as Annotation } from 'chartjs-plugin-annotation';
 })
 export class StatisticsComponent {
   chartOptions: ChartOptions<'doughnut'> = {
+    cutout: '85%',
     plugins: {
       legend: {
         position: 'bottom', // Place the legend below the chart
         rtl: true,
+        display: false,
       },
     },
   };
@@ -35,7 +37,8 @@ export class StatisticsComponent {
           'rgb(255, 128, 0)',
           'rgb(255, 186, 52)',
         ],
-        hoverOffset: 4,
+        borderRadius: 10,
+        offset: 15,
       },
     ],
   };
