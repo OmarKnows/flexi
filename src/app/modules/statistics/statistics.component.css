@@ -165,8 +165,8 @@ td {
 }
 
 .graph-container {
-  height: 350px;
-  margin: 0px 170px 27px;
+  width: 780px;
+  margin: 0px 0px 0px 46px;
 }
 
 .chart-total {
