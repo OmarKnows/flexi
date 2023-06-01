@@ -84,7 +84,6 @@ export class StatisticsComponent {
           {
             type: 'line',
             scaleID: 'x',
-            value: 'March',
             borderColor: 'white',
             borderWidth: 2,
             label: {
