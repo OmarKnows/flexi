@@ -1,11 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-import {
-  ChartData,
-  Chart,
-  ChartConfiguration,
-  ChartEvent,
-  ChartType,
-} from 'chart.js';
+import { Chart, ChartConfiguration, ChartType, ChartOptions } from 'chart.js';
 import { BaseChartDirective } from 'ng2-charts';
 
 import { default as Annotation } from 'chartjs-plugin-annotation';
@@ -16,19 +10,35 @@ import { default as Annotation } from 'chartjs-plugin-annotation';
   styleUrls: ['./statistics.component.css'],
 })
 export class StatisticsComponent {
-  public doughnutChartLabels: string[] = [
-    'ارباح الإشتراكات',
-    'ارباح المبيعات',
-    'عدد المشتركين',
-    'عدد المبيعات',
-  ];
-  public doughnutChartData: ChartData<'doughnut'> = {
-    labels: this.doughnutChartLabels,
-    datasets: [{ data: [621, 361, 103, 120] }],
+  chartOptions: ChartOptions<'doughnut'> = {
+    plugins: {
+      legend: {
+        position: 'bottom', // Place the legend below the chart
+        rtl: true,
+      },
+    },
   };
-  public doughnutChartType: ChartType = 'doughnut';
 
-  private newLabel? = 'New label';
+  public chartData = {
+    labels: [
+      'ارباح الإشتراكات',
+      'ارباح المبيعات',
+      'عدد المشتركين',
+      'عدد المبيعات',
+    ],
+    datasets: [
+      {
+        data: [40, 30, 10, 20],
+        backgroundColor: [
+          'rgb(103, 179, 117)',
+          'rgb(1, 192, 246)',
+          'rgb(255, 128, 0)',
+          'rgb(255, 186, 52)',
+        ],
+        hoverOffset: 4,
+      },
+    ],
+  };
 
   constructor() {
     Chart.register(Annotation);
@@ -139,14 +149,6 @@ export class StatisticsComponent {
   public changeColor(): void {
     this.lineChartData.datasets[2].borderColor = 'green';
     this.lineChartData.datasets[2].backgroundColor = `rgba(0, 255, 0, 0.3)`;
-
-    this.chart?.update();
-  }
-
-  public changeLabel(): void {
-    const tmp = this.newLabel;
-    this.newLabel = this.lineChartData.datasets[2].label;
-    this.lineChartData.datasets[2].label = tmp;
 
     this.chart?.update();
   }
