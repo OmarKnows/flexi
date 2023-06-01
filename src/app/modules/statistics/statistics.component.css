@@ -83,10 +83,12 @@
 .card-subtitle {
   font-size: 14px;
   color: #acadb1;
+  text-align: right;
 }
 
 .table-subtitle {
   color: #bfbfbf;
+  text-align: right;
   font-size: 9px;
 }
 
@@ -165,8 +167,8 @@ td {
 }
 
 .graph-container {
-  width: 780px;
-  margin: 0px 0px 0px 46px;
+  width: 40vw;
+  margin: 0vh 0px 0px 7vw;
 }
 
 .chart-total {
@@ -197,18 +199,17 @@ td {
 .legend {
   display: flex;
   justify-content: space-between;
-  gap: 100px;
 }
 
 .legend-amounts {
-  list-style-type: none;
   font-size: 14px;
-  white-space: nowrap;
 }
 
 .legend-labels {
   color: #939393;
-  list-style-type: none;
   font-size: 10px;
-  white-space: nowrap;
+}
+
+.legend-labels img {
+  margin-left: 8px;
 }
